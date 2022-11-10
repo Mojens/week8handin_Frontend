@@ -1,0 +1,26 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+.bubble-solid {
+    display: none;
+    margin-left: 62%;
+    margin-top: 2rem;
+    width: 10rem;
+    background-color: #4a4a4a;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    border-radius: 30px;
+}
+.bubble-solid p {
+    color: #eee;
+}
+
+.bubble-solid:before {
+    margin-left: 62%;
+    content: "";
+    position: absolute;
+    width: 0px;
+    left: calc(6.5rem - 15px);
+    top: 14.5rem;
+    border: 15px solid;
+    border-color: #4a4a4a transparent transparent transparent;
+}
