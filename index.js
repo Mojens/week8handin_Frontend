@@ -7,7 +7,6 @@ let nameInput = document.getElementById("nameInput").value;
 async function fetchNameInfo(nameInput) {
     nameInput = document.getElementById("nameInput").value;
     let newNameInfoUrl = nameInfoUrl + nameInput;
-    console.log(newNameInfoUrl)
     let data = await fetch(newNameInfoUrl).then(response => response.json());
     document.getElementById("info-tbody").innerHTML =
         `<tr>
